@@ -1,24 +1,24 @@
 # SuperMarket_Checkout_system
 
 #### 介绍
-SuperMarket_Checkout_system（超市管理系统）项目
+## SuperMarket_Checkout_system（超市管理系统）项目
 
-（ 注意：本项目只提供学习使用，禁止用于商业用途，对于违者必将追究相关法律责任！！！ ）
+### （ 注意：本项目只提供学习使用，禁止用于商业用途，对于违者必将追究相关法律责任！！！ ）
 
 #### 软件架构
 
-Java
+## Java
 
 ### 一、项目结构：
 
-##### 请查看 项目结构.txt 文件
+## 请查看 项目结构.txt 文件
         
 
 ### 二、项目分析结果：
 
  1. #### 设计实体信息类
 
-     1. 设计一个Product类，有商品ID、商品名称、商品价格三个属性，要实现getter和setter方法。
+     1. ##### 设计一个Product类，有商品ID、商品名称、商品价格三个属性，要实现getter和setter方法。
 
      2. ##### 设计一个SalesItem类，有商品ID、商品名称、商品价格和销售数量四个属性，要实现getter和setter方法。
 
@@ -40,7 +40,7 @@ Java
 
         ##### （1）打印出所有商品信息，提示用户输入商品ID，输入字符S代表输入结束，输入字符E代表退出；如果用户输入S，流程转至步骤（4）；如果用户输入E，则方法使用return返回；输入其他字符，则默认为商品ID，流程转至步骤（2）。 
 
-        #####（2）用户输入商品ID后，查找商品集合是否有该ID商品，没有则提示没有这个商品ID，找到这个商品ID后回到流程（1）；有则打印该商品信息，并提示用户输入数量。
+        ##### （2）用户输入商品ID后，查找商品集合是否有该ID商品，没有则提示没有这个商品ID，找到这个商品ID后回到流程（1）；有则打印该商品信息，并提示用户输入数量。
 
         ##### （3）用户输入商品数量后，创建一个销售明细对象，添加到销售记录表中，然后打印当前销售记录表的所有销售明细，然后流程回到步骤（1）。
 
@@ -62,33 +62,33 @@ Java
 
     ### 三、项目搭建：（ 创建项目，确定自己要编写哪些类和方法，先创建好类 ）
     
-    1. 定义一个Product类，实现对应的getter和setter方法。
+    #### 1. 定义一个Product类，实现对应的getter和setter方法。
     
-    2. 定义一个SalesItem类，实现对应的getter和setter方法。
+    #### 2. 定义一个SalesItem类，实现对应的getter和setter方法。
     
-    3. 定义一个ProductFileReader接口，有一个方法readProduct()。
+    #### 3. 定义一个ProductFileReader接口，有一个方法readProduct()。
     
-    4. 定义一个ProductFileReader的实现类ProductTxtFileReader，实现readProduct方法。
+    #### 4. 定义一个ProductFileReader的实现类ProductTxtFileReader，实现readProduct方法。
     
-    5. 定义一个ProductFileReader的实现类ProductCsvFileReader，实现readProduct方法。
+    #### 5. 定义一个ProductFileReader的实现类ProductCsvFileReader，实现readProduct方法。
     
-    6. 设计一个Cashier类，定义构造方法
+    #### 6. 设计一个Cashier类，定义构造方法
     
-    7. 为Cashier设计一个登录方法login；为Cashier设计一个收银方法sales()；为Cashier设计一个addProduct方法；为Cashier设计一个运行方法run；为Cashier类添加一个main方法。
+    #### 7. 为Cashier设计一个登录方法login；为Cashier设计一个收银方法sales()；为Cashier设计一个addProduct方法；为Cashier设计一个运行方法run；为Cashier类添加一个main方法。
     
        ### 操作结果：请查看源代码！！！
 
 ### 四、未修复的bug：
 
-1. 在选择录入 ProductTxtFileReader 文档完成后进入 收银 界面的显示所有商品信息为空不会显示 ProductTxtFileReader 文档录入的数据，如下图所示（ps：录入ProductCsvFileReader文档 也是一种的不会显示）：
+#### 1. 在选择录入 ProductTxtFileReader 文档完成后进入 收银 界面的显示所有商品信息为空不会显示 ProductTxtFileReader 文档录入的数据，如下图所示（ps：录入ProductCsvFileReader文档 也是一种的不会显示）：
 
-   ![image-20220925210314292](C:\Users\35098\AppData\Roaming\Typora\typora-user-images\image-20220925210314292.png)
+   
 
-2. 在选择录入方式时，请勿选择 6.MySQLDate 录入否则会出现项目报错导致停止运行，由于该功能尚未开发！！！忽略即可。
+#### 2. 在选择录入方式时，请勿选择 6.MySQLDate 录入否则会出现项目报错导致停止运行，由于该功能尚未开发！！！忽略即可。
 
-   ![image-20220925210634759](C:\Users\35098\AppData\Roaming\Typora\typora-user-images\image-20220925210634759.png)
+   
 
-   ![image-20220925210544680](C:\Users\35098\AppData\Roaming\Typora\typora-user-images\image-20220925210544680.png)
+   
 
 ### 五、本项目可自行div修改学习：
 
