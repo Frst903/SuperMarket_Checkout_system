@@ -1,0 +1,23 @@
+#### SuperMarket_Checkout_system
+
+│  项目结构.txt
+│  README.md
+│  SuperMarket_Checkout_system.iml
+│  项目运行指南.md
+│  
+├─src					源代码存放目录
+│      Cashier.java				Cashier类，负责收银管理
+│      MySQLData.java			数据库存储
+│      Product.java				实体信息类，Product类，用于描述超市商品
+│      ProductCsvFileReader.java		读取文件的接口和实现类，ProductFileReader的实现类
+│      ProductFileReader.java			读取文件的接口和实现类，定义一个ProductFileReader接口
+│      ProductTxtFileReader.java		读取文件的接口和实现类，ProductFileReader 的实现类
+│      SalesItem.java				实体信息类，SalesItem类，用于描述销售明细
+│      
+└─wd				项目的 .txt 和 ,csv 文件存放目录，也可自行修改文件的存放位置
+        A001.csv
+        A001.txt
+        A02.txt
+        test001.csv
+        test001.txt
+        
